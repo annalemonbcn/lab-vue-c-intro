@@ -1,10 +1,9 @@
 <template>
   <div class="advantages">
     <!-- <SingleAdv titleAdv="Titulo de ejemplo" bodyAdv="Esto es un body de ejemplo para probar" /> -->
-    <h1>Hello</h1>
     <SingleAdv v-for="advantage in advantages" :key="advantages.id"
-    :titleAdv="advantages.title"
-    :bodyAdv="advantages.body" />
+    :titleAdv="advantage.title"
+    :bodyAdv="advantage.body" />
     <!-- <SingleAdv />  -->
   </div>
 </template>
@@ -38,9 +37,6 @@ export default {
   },
   components: {
     SingleAdv
-  },
-  created(){
-    console.log(this.advantages);
   }
 }
 // No hay export -> no hay ninguna variable o método o propiedad o vista a exportar
