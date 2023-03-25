@@ -1,6 +1,6 @@
 <template>
   <div class="adv">
-    <img src="../images/USP-1.png" alt="">
+    <img src="../images/USP-1.png" alt="adv alt">
     <h3 class="title">{{ titleAdv }}</h3>
     <p class="body">{{ bodyAdv }}</p>
   </div>
