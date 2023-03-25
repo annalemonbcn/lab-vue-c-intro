@@ -1,13 +1,27 @@
 <template>
   <div class="adv">
     <img src="../images/USP-1.png" alt="">
-    <h3 class="title">Performant</h3>
-    <p class="body">Truly reactive, compiler-optimized rendering system that rarely requires manual optimization.</p>
+    <h3 class="title">{{ titleAdv }}</h3>
+    <p class="body">{{ bodyAdv }}</p>
   </div>
 </template>
 
 <script>
-
+export default{
+  name: 'SingleAdv',
+  props: {
+    titleAdv: {
+      type: String,
+      required: true,
+      default: 'My title'
+    },
+    bodyAdv:{
+      type: String,
+      required: true,
+      default: 'Body for the advantage'
+    }
+  }
+}
 </script>
 
 <style>

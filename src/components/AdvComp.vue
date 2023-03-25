@@ -1,6 +1,6 @@
 <template>
   <div class="advantages">
-    <SingleAdv />
+    <SingleAdv titleAdv="Titulo de ejemplo" bodyAdv="Esto es un body de ejemplo para probar" />
     <SingleAdv />
     <SingleAdv /> 
   </div>
