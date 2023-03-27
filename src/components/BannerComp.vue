@@ -3,7 +3,7 @@
     <img src="../assets/logo.svg" alt="vue logo" class="logo">
     <h1>Welcome to Vue.js</h1>
     <p>Become a coding ninja with the fastest-growing JavaScript framework</p>
-    <button class="btn">Awesome</button>
+    <button class="btn">Awesome!</button>
   </section>
  </template>
 
@@ -45,6 +45,7 @@
     border-radius: 13px;
     font-size: 14px;
     line-height: 20px;
+    font-weight: 800;
     border: 0;
     cursor: pointer;
   }
