@@ -1,0 +1,44 @@
+<template>
+  <div class="adv">
+    <img src="../images/USP-1.png" alt="adv alt">
+    <h3 class="title">{{ titleAdv }}</h3>
+    <p class="body">{{ bodyAdv }}</p>
+  </div>
+</template>
+
+<script>
+export default{
+  name: 'SingleAdv',
+  props: {
+    titleAdv: {
+      type: String,
+      required: true,
+      default: 'My title'
+    },
+    bodyAdv:{
+      type: String,
+      required: true,
+      default: 'Body for the advantage'
+    }
+  }
+}
+</script>
+
+<style>
+  .adv{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    flex-direction: 1;
+  }
+  .adv .title{
+    font-weight: 700;
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  .adv .body{
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+  }
+</style>
