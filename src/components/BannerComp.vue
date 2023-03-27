@@ -20,29 +20,31 @@
     justify-content: center;
     color: #2B2F30;
     font-weight: 800;
-    padding: 40px 0 65px;
+    padding: 40px 30px 65px;
   }
   #banner .logo{
     max-width: 130px;
   }
   #banner h1{
     font-size: 50px;
-    line-height: 95px;
+    line-height: 62px;
     margin-top: 10px;
+    text-align: center;
   }
   #banner p{
     font-size: 14px;
     line-height: 20px;
     margin-top: 30px;
+    text-align: center;
   }
   #banner .btn{
     margin-top: 30px;
+    padding: 7px 25px;
     color: #fff;
     background-color: #34495E;
     border-radius: 13px;
     font-size: 14px;
     line-height: 20px;
-    padding: 5px 25px;
     border: 0;
     cursor: pointer;
   }

@@ -1,7 +1,7 @@
 <template>
   <section id="header">
     <img src="../images/Ironhack_logo.png" alt="ironhack logo">
-    <img src="../images/Burger_menu.svg" alt="burger menu icon">
+    <img src="../images/Burger_menu.svg" id="burgerMenu" alt="burger menu icon">
   </section>
 </template>
 
@@ -11,5 +11,13 @@
 </script>
 
 <style>
-
+#header{
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header #burgerMenu{
+  cursor: pointer;
+}
 </style>

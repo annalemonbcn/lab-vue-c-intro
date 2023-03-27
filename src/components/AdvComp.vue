@@ -1,15 +1,13 @@
 <template>
   <div class="advantages">
-    <!-- <SingleAdv titleAdv="Titulo de ejemplo" bodyAdv="Esto es un body de ejemplo para probar" /> -->
-    <SingleAdv v-for="advantage in advantages" :key="advantages.id"
+    <SingleAdvComp v-for="advantage in advantages" :key="advantages.id"
     :titleAdv="advantage.title"
     :bodyAdv="advantage.body" />
-    <!-- <SingleAdv />  -->
   </div>
 </template>
 
 <script>
-import SingleAdv from './SingleAdv.vue';
+import SingleAdvComp from './SingleAdvComp.vue';
 export default {
   data(){
     return {
@@ -36,7 +34,7 @@ export default {
     }
   },
   components: {
-    SingleAdv
+    SingleAdvComp
   }
 }
 // No hay export -> no hay ninguna variable o método o propiedad o vista a exportar
@@ -47,12 +45,18 @@ export default {
   .advantages{
     background-color: #39B983;
     display: flex;
-    flex-flow: row nowrap;
-    align-items: flex-start;
+    flex-flow: column nowrap;
+    align-items: center;
     justify-content: space-around;
     padding: 60px 10% 50px;
     gap: 2rem;
   }
+  @media screen and (min-width: 425px){
+    .advantages{
+      flex-flow: row nowrap;
+      align-items: flex-start;
+    }
+  } 
   @media screen and (min-width: 1200px){
     .advantages{
       gap: 8rem;
